@@ -20,7 +20,7 @@ class Spider(object):
                 self.urls.adds(urls)
                 self.outputer.collect(data)
 
-                if count == 100:
+                if count == 10:
                     break
                     
                 count = count + 1

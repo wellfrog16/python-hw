@@ -21,6 +21,7 @@ class HtmlParser(object):
         links = soup.find_all('a', href=re.compile(r'/item/'))
         for link in links:
             url = link['href']
+            # 此处会自动处理url域名
             newUrl = urlparse.urljoin(page, url)
             urls.add(newUrl)
 
